@@ -53,7 +53,7 @@ SCRIPTS := build-scripts
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
 
-.PHONY: all clean checkin build-dir firmware dist zip zip-all
+.PHONY: all clean build-dir firmware dist zip zip-all
 
 all: dist
 
@@ -97,7 +97,6 @@ $(ROOT)/firmware.%: firmware
 
 
 dist: \
-	checkin \
 	build-dir \
 	$(ROOT)/firmware.hex \
 	$(ROOT)/firmware.eep \
