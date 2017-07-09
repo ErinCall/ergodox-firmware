@@ -1,17 +1,17 @@
 /* USB Keyboard Example for Teensy USB Development Board
  * http://www.pjrc.com/teensy/usb_keyboard.html
  * Copyright (c) 2009 PJRC.COM, LLC
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -34,8 +34,8 @@
  **************************************************************************/
 
 // You can change these to give your code its own name.
-#define STR_MANUFACTURER	L"unspecified"  // TODO
-#define STR_PRODUCT		L"ErgoDox ergonomic keyboard"
+#define STR_MANUFACTURER	L"Erin Call"
+#define STR_PRODUCT		L"Dactyl Keyboard"
 
 
 // Mac OS-X and Linux automatically load the correct drivers.  On
@@ -46,7 +46,7 @@
 #define PRODUCT_ID		0x6028  // ErgoDox ergonomic keyboard
 
 
-// USB devices are supposed to implment a halt feature, which is
+// USB devices are supposed to implement a halt feature, which is
 // rarely (if ever) used.  If you comment this line out, the halt
 // code will be removed, saving 102 bytes of space (gcc 4.3.0).
 // This is not strictly USB compliant, but works with all major
