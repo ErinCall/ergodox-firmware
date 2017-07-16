@@ -21,6 +21,7 @@
 	void kbfun_toggle        (void);
 	void kbfun_transparent   (void);
 	// --- layer push/pop functions
+	void kbfun_layer_push    (void);
 	void kbfun_layer_push_1  (void);
 	void kbfun_layer_push_2  (void);
 	void kbfun_layer_push_3  (void);
@@ -41,6 +42,7 @@
 	void kbfun_layer_sticky_8  (void);
 	void kbfun_layer_sticky_9  (void);
 	void kbfun_layer_sticky_10 (void);
+	void kbfun_layer_pop     (void);
 	void kbfun_layer_pop_1   (void);
 	void kbfun_layer_pop_2   (void);
 	void kbfun_layer_pop_3   (void);

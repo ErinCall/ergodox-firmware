@@ -111,6 +111,19 @@ static void layer_pop(uint8_t local_id) {
 	}
 }
 
+/*
+ * [name]
+ *   Layer Pop
+ *
+ * [description]
+ *   Pop the given layer from the layer stack
+ *   active
+ */
+void kbfun_layer_pop(void) {
+	uint8_t keycode = kb_layout_get(LAYER, ROW, COL);
+	layer_pop(keycode);
+}
+
 static void layer_push(uint8_t local_id) {
 	uint8_t keycode = kb_layout_get(LAYER, ROW, COL);
 	layer_pop(local_id);
@@ -121,6 +134,19 @@ static void layer_push(uint8_t local_id) {
 		main_layers_pop_id(main_layers_peek(0));
 	}
 	layer_ids[local_id] = main_layers_push(keycode, eStickyNone);
+}
+
+/*
+ * [name]
+ *   Layer Push
+ *
+ * [description]
+ *   Push the given layer onto the layer stack
+ *   active
+ */
+void kbfun_layer_push(void) {
+	uint8_t keycode = kb_layout_get(LAYER, ROW, COL);
+	layer_push(keycode);
 }
 
 static void layer_sticky(uint8_t local_id) {
