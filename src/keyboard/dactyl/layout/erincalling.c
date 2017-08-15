@@ -50,7 +50,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 0,
 // left hand
       0,         _F1,                  _F2,                 _F3,                 _F4,  _F5,
-      0,           0,                 _mute,            _volumeD,            _volumeU,    0,
+      0,           0,                _mute,            _volumeD,            _volumeU,    0,
       0,           0,  MEDIAKEY_PREV_TRACK, MEDIAKEY_PLAY_PAUSE, MEDIAKEY_NEXT_TRACK,    0,
       0,           0,                    0,                   0,                    0,   0,
       1,           0,                    0,                   0,                    0,
