@@ -195,6 +195,19 @@ static void layer_toggle(uint8_t local_id) {
 
 /*
  * [name]
+ *   Layer Toggle
+ *
+ * [description]
+ *   Push the given inactive layer onto the layer stack,
+ *   or pop the given active layer from the layer stack
+ */
+void kbfun_layer_toggle(void) {
+	uint8_t keycode = kb_layout_get(LAYER, ROW, COL);
+	layer_toggle(keycode);
+}
+
+/*
+ * [name]
  *   Layer push #1
  *
  * [description]

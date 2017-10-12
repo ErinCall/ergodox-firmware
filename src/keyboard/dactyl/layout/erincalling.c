@@ -103,7 +103,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 // basic
 #define  kprrel  &kbfun_press_release
 #define  mprrel  &kbfun_mediakey_press_release
-#define  ltog    &kbfun_toggle
+#define  ltog    &kbfun_layer_toggle
 #define  ktrans  &kbfun_transparent
 // --- layer push/pop functions
 #define  lpush    &kbfun_layer_push
