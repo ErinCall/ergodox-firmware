@@ -32,11 +32,11 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 // left hand
       _esc,         _1,         _2,      _3,      _4, _5,
       _tab,     _quote,     _comma, _period,      _P, _Y,
-         1,         _A,         _O,      _E,      _U, _I,
+     _guiL,         _A,         _O,      _E,      _U, _I,
    _shiftL, _semicolon,         _Q,      _J,      _K, _X,
-     _guiL,     _grave,     _equal, _arrowL, _arrowR,
+     _home,     _grave,     _equal, _arrowL, _arrowR,
                                                  _ctrlL, _altL,
-                                                         _home,
+                                                             1,
                                             _bs,   _del, _guiL,
 
 // right hand
@@ -44,9 +44,9 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
            _F,      _G,      _C,        _R,        _L,     _slash,
            _D,      _H,      _T,        _N,        _S,      _dash,
            _B,      _M,      _W,        _V,        _Z,    _shiftR,
-               _arrowU, _arrowD, _bracketL, _bracketR,      _guiR,
+               _arrowU, _arrowD, _bracketL, _bracketR,       _end,
  _altR, _ctrlR,
-  _end,
+     1,
  _guiR, _enter, _space ),
 
 
@@ -150,11 +150,11 @@ NULL,
 // left hand
  kprrel,  kprrel, kprrel, kprrel, kprrel, kprrel,
  kprrel,  kprrel, kprrel, kprrel, kprrel, kprrel,
-  lpush,  kprrel, kprrel, kprrel, kprrel, kprrel,
+ kprrel,  kprrel, kprrel, kprrel, kprrel, kprrel,
  kprrel,  kprrel, kprrel, kprrel, kprrel, kprrel,
  kprrel, kprrel, kprrel, kprrel, kprrel,
                                                  kprrel,  kprrel,
-                                                          kprrel,
+                                                           lpush,
                                          kprrel, kprrel,  kprrel,
 // right hand
            kprrel, kprrel, kprrel, kprrel, kprrel,  kprrel,
@@ -163,7 +163,7 @@ NULL,
            kprrel, kprrel, kprrel, kprrel, kprrel,  kprrel,
                    kprrel, kprrel, kprrel, kprrel,  kprrel,
  kprrel, kprrel,
- kprrel,
+  lpush,
  kprrel, kprrel, kprrel ),
 
 
@@ -226,11 +226,11 @@ NULL,
 // left hand
  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
-   lpop, kprrel, kprrel, kprrel, kprrel, kprrel,
+ kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
  kprrel, kprrel, kprrel, kprrel, kprrel,
                                                  kprrel, kprrel,
-                                                         kprrel,
+                                                           lpop,
                                          kprrel, kprrel, kprrel,
 // right hand
            kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
@@ -239,7 +239,7 @@ NULL,
            kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
                    kprrel, kprrel, kprrel, kprrel, kprrel,
  kprrel, kprrel,
- kprrel,
+   lpop,
  kprrel, kprrel, kprrel ),
 
 
