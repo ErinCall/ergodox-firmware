@@ -117,7 +117,6 @@ static void layer_pop(uint8_t local_id) {
  *
  * [description]
  *   Pop the given layer from the layer stack
- *   active
  */
 void kbfun_layer_pop(void) {
 	uint8_t keycode = kb_layout_get(LAYER, ROW, COL);
@@ -142,7 +141,6 @@ static void layer_push(uint8_t local_id) {
  *
  * [description]
  *   Push the given layer onto the layer stack
- *   active
  */
 void kbfun_layer_push(void) {
 	uint8_t keycode = kb_layout_get(LAYER, ROW, COL);
